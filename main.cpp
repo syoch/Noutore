@@ -1,23 +1,25 @@
 #include <algorithm>
 #include <iostream>
+#include <cstring>
+#include <ctime>
 #include "common.h"
 #include "utils.h"
 #include "expr.h"
 
 #define clear std::system("clear")
 
-static constexpr int LEVEL_MIN = 1;
-static constexpr int LEVEL_MAX = 100;
+static constexpr i64 LEVEL_MIN = 1;
+static constexpr i64 LEVEL_MAX = 100;
 
 int main() {
-  int level = input_int("input level your like");
-  int count = input_int("how many do you solve formula?");
+  u32 level = input_int("input level your like");
+  u32 count = input_int("how many do you solve formula?");
   std::vector<Expr> expr_vec;
   
   srand((unsigned)time(NULL));
   clear;
   
-  for( int i = -level; i < count; i++ ) {
+  for( i64 i = -level; i < count; i++ ) {
     if( expr_vec.size() < count ) {
       Expr expr;
       

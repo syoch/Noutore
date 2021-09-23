@@ -9,8 +9,10 @@ std::string format(char const* fmt, Args... args) {
   return buf;
 }
 
-std::string input(std::string const& prompt = "");
-int input_int(std::string const& prompt = "");
+i64 to_integer(std::string const& str);
 
-int randrange(int min, int max);
+std::string input(std::string const& prompt = "");
+i64 input_int(std::string const& prompt = "");
+
+i64 randrange(i64 min, i64 max);
 
