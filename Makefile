@@ -6,7 +6,7 @@ LD		= $(CXX)
 CXXFILES	= $(wildcard *.cpp)
 OFILES		= $(CXXFILES:.cpp=.o)
 
-CXXFLAGS	= -O2 -std=gnu++20
+CXXFLAGS	= -std=gnu++20
 LDFLAGS		= -Wl,--gc-sections
 
 all: $(TARGET)
