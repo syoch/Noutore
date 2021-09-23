@@ -1,7 +1,7 @@
 TARGET		= noutore.out
 
-CXX				= clang++
-LD				= $(CXX)
+CXX		= clang++
+LD		= $(CXX)
 
 CXXFILES	= $(wildcard *.cpp)
 OFILES		= $(CXXFILES:.cpp=.o)
