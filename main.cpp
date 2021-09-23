@@ -1,9 +1,6 @@
 #include <algorithm>
 #include <iostream>
-#include <string>
-#include <vector>
-#include <ctime>
-#include <cstring>
+#include "common.h"
 #include "utils.h"
 #include "expr.h"
 
